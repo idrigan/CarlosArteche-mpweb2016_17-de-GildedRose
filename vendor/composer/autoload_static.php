@@ -21,8 +21,14 @@ class ComposerStaticInit3e90418c9898d9b905195090f47d3e42
     );
 
     public static $classMap = array (
-        'Entregable1\\GildedRose' => __DIR__ . '/../..' . '/src/gilded_rose.php',
-        'Entregable1\\Item' => __DIR__ . '/../..' . '/src/gilded_rose.php',
+        'Entregable1\\AgedBrie' => __DIR__ . '/../..' . '/src/AgedBrie.php',
+        'Entregable1\\BackStage' => __DIR__ . '/../..' . '/src/BackStage.php',
+        'Entregable1\\Conjured' => __DIR__ . '/../..' . '/src/Conjured.php',
+        'Entregable1\\GildedRose' => __DIR__ . '/../..' . '/src/GildedRose.php',
+        'Entregable1\\Item' => __DIR__ . '/../..' . '/src/GildedRose.php',
+        'Entregable1\\NormalItem' => __DIR__ . '/../..' . '/src/NormalItem.php',
+        'Entregable1\\OperationsInterfaz' => __DIR__ . '/../..' . '/src/OperationsInterfaz.php',
+        'Entregable1\\Sulfuras' => __DIR__ . '/../..' . '/src/Sulfuras.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

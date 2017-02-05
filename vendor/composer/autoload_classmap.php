@@ -6,6 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Entregable1\\GildedRose' => $baseDir . '/src/gilded_rose.php',
-    'Entregable1\\Item' => $baseDir . '/src/gilded_rose.php',
+    'Entregable1\\AgedBrie' => $baseDir . '/src/AgedBrie.php',
+    'Entregable1\\BackStage' => $baseDir . '/src/BackStage.php',
+    'Entregable1\\Conjured' => $baseDir . '/src/Conjured.php',
+    'Entregable1\\GildedRose' => $baseDir . '/src/GildedRose.php',
+    'Entregable1\\Item' => $baseDir . '/src/GildedRose.php',
+    'Entregable1\\NormalItem' => $baseDir . '/src/NormalItem.php',
+    'Entregable1\\OperationsInterfaz' => $baseDir . '/src/OperationsInterfaz.php',
+    'Entregable1\\Sulfuras' => $baseDir . '/src/Sulfuras.php',
 );
