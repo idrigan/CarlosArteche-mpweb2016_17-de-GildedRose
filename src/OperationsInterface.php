@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: carlos
- * Date: 3/02/17
- * Time: 19:50
- */
+
 
 namespace Entregable1;
 
 
-interface OperationsInterfaz
+interface OperationsInterface
 {
 
     const MAX_QUALITY  = 50;

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: carlos
- * Date: 3/02/17
- * Time: 20:31
- */
+
 
 namespace Entregable1;
 

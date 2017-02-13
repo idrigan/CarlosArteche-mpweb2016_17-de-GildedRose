@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: carlos
- * Date: 3/02/17
- * Time: 19:27
- */
+
 
 namespace Entregable1;
 
 
-class AgedBrie extends Item implements OperationsInterfaz
+class AgedBrie extends Item implements OperationsInterface
 {
     function __construct($name, $sell_in, $quality)
     {
@@ -29,14 +24,14 @@ class AgedBrie extends Item implements OperationsInterfaz
 
     function improveQuality()
     {
-        if ($this->quality < MAX_QUALITY) {
-            $this->quality = $this->quality + MODIFY_QUALITY;
+        if ($this->quality < OperationsInterface::MAX_QUALITY) {
+            $this->quality = $this->quality + OperationsInterface::MODIFY_QUALITY;
         }
     }
 
 
     function downgradeSellIn()
     {
-        $this->sell_in = $this->sell_in - MODIFY_QUALITY;
+        $this->sell_in = $this->sell_in - OperationsInterface::MODIFY_QUALITY;
     }
 }

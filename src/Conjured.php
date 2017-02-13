@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: carlos
- * Date: 3/02/17
- * Time: 20:34
- */
+
 
 namespace Entregable1;
 
 
-class Conjured extends Item implements OperationsInterfaz
+class Conjured extends Item implements OperationsInterface
 {
     public function __construct($name, $sell_in, $quality)
     {
@@ -32,12 +27,12 @@ class Conjured extends Item implements OperationsInterfaz
 
     function downgradeSellIn()
     {
-        $this->sell_in = $this->sell_in - MODIFY_QUALITY;
+        $this->sell_in = $this->sell_in - OperationsInterface::MODIFY_QUALITY;
     }
 
     function downgradeQuality(){
         if ( $this->quality > 0 ) {
-            $this->quality = $this->quality - MODIFY_QUALITY;
+            $this->quality = $this->quality - OperationsInterface::MODIFY_QUALITY;
         }
     }
 }

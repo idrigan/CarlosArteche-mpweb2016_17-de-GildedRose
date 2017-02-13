@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: carlos
- * Date: 3/02/17
- * Time: 19:23
- */
+
 
 namespace Entregable1;
 
 
-class BackStage extends Item implements OperationsInterfaz
+class BackStage extends Item implements OperationsInterface
 {
     public function __construct($name, $sell_in, $quality)
     {
@@ -42,14 +37,14 @@ class BackStage extends Item implements OperationsInterfaz
 
     function improveQuality()
     {
-        if ($this->quality < MAX_QUALITY) {
-            $this->quality = $this->quality + MODIFY_QUALITY;
+        if ($this->quality < OperationsInterface::MAX_QUALITY) {
+            $this->quality = $this->quality + OperationsInterface::MODIFY_QUALITY;
         }
     }
 
 
     function downgradeSellIn()
     {
-        $this->sell_in = $this->sell_in -MODIFY_QUALITY;
+        $this->sell_in = $this->sell_in - OperationsInterface::MODIFY_QUALITY;
     }
 }
